@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {loadAirwallex, init, redirectToCheckout} from 'airwallex-payment-elements';
 import axios from 'axios'
-import { Routes, Route, useParams, BrowserRouter as Router, useRoutes } from 'react-router-dom';
+import { Routes, Route, useParams, BrowserRouter as Router, useRoutes, HashRouter } from 'react-router-dom';
 import Succeed from './Succeed';
 import Failed from './Failed';
 
@@ -51,9 +51,9 @@ const App = () => {
 
 const AppWrapper = () => {
   return (
-    <Router>
+    <HashRouter>
       <App />
-    </Router>
+    </HashRouter>
   )
 }
 
