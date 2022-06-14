@@ -6,7 +6,7 @@ const Succeed = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate("/redirect",{ replace: true });
-        }, 2000)
+        }, 3000)
     }, [])
     return (
         <div>
