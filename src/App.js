@@ -6,6 +6,7 @@ import axios from 'axios'
 import { Routes, Route, useParams, BrowserRouter as Router, useRoutes, HashRouter } from 'react-router-dom';
 import Succeed from './Succeed';
 import Failed from './Failed';
+import Redirect from './Redirect';
 
 function Airwallex() {
   let { intentId, clientSecret } = useParams();
@@ -20,8 +21,8 @@ function Airwallex() {
         client_secret: clientSecret,
         currency: 'HKD',
         locale: 'en',
-        successUrl: 'https://socif.co',
-        failUrl: 'https://google.com',
+        successUrl: 'https://socif.github.io/socif_airwallex_app/#/succeed',
+        failUrl: 'https://socif.github.io/socif_airwallex_app/#/failed',
         applePayRequestOptions: { countryCode: 'HK' }
     });
   },[])
@@ -44,6 +45,10 @@ const App = () => {
     {
       path: "/failed",
       element: <Failed />
+    },
+    {
+      path: "/redirect",
+      element: <Redirect />
     }
   ])
   return routes
