@@ -4,7 +4,7 @@ import './App.css';
 import {loadAirwallex, init, redirectToCheckout} from 'airwallex-payment-elements';
 import axios from 'axios'
 import { Routes, Route, useParams, BrowserRouter as Router, useRoutes, HashRouter } from 'react-router-dom';
-import Succeed from './Succeed';
+import Succeeded from './Succeeded';
 import Failed from './Failed';
 import Redirect from './Redirect';
 
@@ -21,7 +21,7 @@ function Airwallex() {
         client_secret: clientSecret,
         currency: 'HKD',
         locale: 'en',
-        successUrl: 'https://socif.github.io/socif_airwallex_app/#/succeed',
+        successUrl: 'https://socif.github.io/socif_airwallex_app/#/succeeded',
         failUrl: 'https://socif.github.io/socif_airwallex_app/#/failed',
         applePayRequestOptions: { countryCode: 'HK' }
     });
@@ -39,8 +39,8 @@ const App = () => {
       element: <Airwallex />
     },
     {
-      path: "/succeed",
-      element: <Succeed />
+      path: "/succeeded",
+      element: <Succeeded />
     },
     {
       path: "/failed",

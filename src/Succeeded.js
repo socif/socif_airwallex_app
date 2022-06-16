@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-const Succeed = () => {
+const Succeeded = () => {
     const navigate = useNavigate();
     useEffect(() => {
         setTimeout(() => {
@@ -10,9 +10,9 @@ const Succeed = () => {
     }, [])
     return (
         <div>
-            Payment Succeed!
+            Payment Succeeded!
         </div>
     );
 }
  
-export default Succeed;
+export default Succeeded;
