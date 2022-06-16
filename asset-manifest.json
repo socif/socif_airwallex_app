@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/socif_airwallex_app/static/css/main.073c9b0a.css",
-    "main.js": "/socif_airwallex_app/static/js/main.b8befdcd.js",
+    "main.js": "/socif_airwallex_app/static/js/main.0a7280be.js",
     "static/js/787.161faae3.chunk.js": "/socif_airwallex_app/static/js/787.161faae3.chunk.js",
     "static/media/logo.svg": "/socif_airwallex_app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/socif_airwallex_app/index.html",
     "main.073c9b0a.css.map": "/socif_airwallex_app/static/css/main.073c9b0a.css.map",
-    "main.b8befdcd.js.map": "/socif_airwallex_app/static/js/main.b8befdcd.js.map",
+    "main.0a7280be.js.map": "/socif_airwallex_app/static/js/main.0a7280be.js.map",
     "787.161faae3.chunk.js.map": "/socif_airwallex_app/static/js/787.161faae3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b8befdcd.js"
+    "static/js/main.0a7280be.js"
   ]
 }
